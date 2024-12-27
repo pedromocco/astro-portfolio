@@ -1,0 +1,118 @@
+---
+import AstroIco from "../icons/AstroIco.astro";
+import CodeIco from "../icons/CodeIco.astro";
+import CssIco from "../icons/CssIco.astro";
+import ExpressIco from "../icons/ExpressIco.astro";
+import GithubIco from "../icons/GithubIco.astro";
+import GitIco from "../icons/GitIco.astro";
+import HtmlIco from "../icons/HtmlIco.astro";
+import JavascriptIco from "../icons/JavascriptIco.astro";
+import MySQLIco from "../icons/MySQLIco.astro";
+import NodeIco from "../icons/NodeIco.astro";
+import ReactjsIco from "../icons/ReactjsIco.astro";
+import TailwindIco from "../icons/TailwindIco.astro";
+import TerminalIco from "../icons/TerminalIco.astro";
+import ToolsIco from "../icons/ToolsIco.astro";
+import TypescriptIco from "../icons/TypescriptIco.astro";
+import Badge from "./Badge.astro";
+---
+
+<div class=" p-4 font-thin text-pretty">
+  <p class="text-lg opacity-60">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi quis
+    laboriosam, esse aspernatur provident inventore. Asperiores sit dolorem quod
+    est minima magni perferendis repudiandae placeat et assumenda. Aspernatur,
+    debitis sapiente.
+  </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+  <div
+    class="w-[270px] lg:w-60 mt-5 border border-gray-200/20 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:shadow-lg hover:shadow-blue-500/10 hover:scale-105 transition"
+  >
+    <CodeIco class="size-16 m-3" />
+    <div class="p-5 lg:w-60">
+      <h5
+        class="mb-1 text-2xl font-bold tracking-tight text-white dark:text-white"
+      >
+        Front End
+      </h5>
+
+      <ul>
+        <li class="flex items-center m-3">
+          <HtmlIco class="size-5" />
+          <Badge> HTML</Badge>
+        </li>
+        <li class="flex items-center m-3">
+          <CssIco class="size-5" />
+          <Badge>CSS</Badge>
+        </li>
+        <li class="flex items-center m-3">
+          <ReactjsIco class="size-5" />
+          <Badge>REACT</Badge>
+        </li>
+        <li class="flex items-center m-3">
+          <AstroIco class="size-5" />
+          <Badge>ASTRO</Badge>
+        </li>
+        <li class="flex items-center m-3">
+          <JavascriptIco class="size-5" />
+          <Badge>JAVASCRIPT</Badge>
+        </li>
+        <li class="flex items-center m-3">
+          <TailwindIco class="size-5" />
+          <Badge>TAILWINDCSS</Badge>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    class="w-[270px] lg:w-60 mt-5 border border-gray-200/20 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:shadow-lg hover:shadow-blue-500/10 hover:scale-105 transition"
+  >
+    <TerminalIco class="size-16 m-3" />
+    <div class="p-5 lg:w-60">
+      <h5
+        class="mb-1 text-2xl font-bold tracking-tight text-white dark:text-white"
+      >
+        Back End
+      </h5>
+
+      <ul>
+        <li class="flex items-center m-3">
+          <NodeIco class="size-5" /><Badge>NODE.JS</Badge>
+        </li>
+        <li class="flex items-center m-3">
+          <ExpressIco class="size-5" /><Badge>EXPRESS</Badge>
+        </li>
+        <li class="flex items-center m-3">
+          <MySQLIco class="size-5" /><Badge>MYSQL</Badge>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    class="w-[270px] lg:w-60 mt-5 border border-gray-200/20 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:shadow-lg hover:shadow-blue-500/10 hover:scale-105 transition"
+  >
+    <ToolsIco class="size-16 m-3" />
+    <div class="p-5 lg:w-60">
+      <h5
+        class="mb-1 text-2xl font-bold tracking-tight text-white dark:text-white"
+      >
+        Herramientas
+      </h5>
+
+      <ul>
+        <li class="flex items-center m-3">
+          <TypescriptIco class="size-5" /><Badge>TYPESCRIPT</Badge>
+        </li>
+        <li class="flex items-center m-3">
+          <GitIco class="size-5" /><Badge>GIT</Badge>
+        </li>
+        <li class="flex items-center m-3">
+          <GithubIco class="size-5" /><Badge>GITHUB</Badge>
+        </li>
+        <li class="flex items-center m-3"><Badge color="blue">SAP</Badge></li>
+        <li class="flex items-center m-3"><Badge color="sky">ABAP</Badge></li>
+      </ul>
+    </div>
+  </div>
+</div>

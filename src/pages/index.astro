@@ -11,29 +11,33 @@ import SuitcaseIco from "../icons/SuitcaseIco.astro";
 import ReactIco from "../icons/ReactIco.astro";
 import Experience from "../components/Experience.astro";
 import Projects from "../components/Projects.astro";
+import About from "../components/About.astro";
+import Skills from "../components/Skills.astro";
+import Contact from "../components/Contact.astro";
+import TieIco from "../icons/TieIco.astro";
+import LaptopIco from "../icons/LaptopIco.astro";
+import ContactIco from "../icons/ContactIco.astro";
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
   <main class="px-4">
-    <Container class="py-36 pb-48">
-      <img
-        class="size-10 lg:size-20 rounded-full mb-7"
-        src="https://avatars.githubusercontent.com/pedromocco"
-      />
-      <h1 class="text-white text-3xl lg:text-5xl font-bold flex gap-x-4 pb-4 opacity-80">
+    <Container class="py-60 pb-64">
+      <h1
+        class="text-white text-3xl lg:text-5xl font-bold flex gap-x-4 pb-4 opacity-80"
+      >
         Hola! Soy Pedro Moccó <div class="flex justify-center items-center">
-          <Badge>Abierto a trabajar</Badge>
+          <Badge color="green">Abierto a trabajar</Badge>
         </div>
       </h1>
-      <h2 class="text-xl lg:text-2xl opacity-80">
+      <h2 class="text-xl lg:text-2xl opacity-80 text-pretty">
         Desarrollador Front-End Venezuela especializado en <span
           class="font-bold text-blue-500">React</span
         >, desarrollo visual y en resiliencia.
       </h2>
-      <p class="text-sm opacity-60 mt-4">
-        Determinado a efrentar cualquier desafio y emocionado por poder
+      <p class="text-sm opacity-60 mt-4 text-pretty">
+        Determinado a enfrentar cualquier desafio y emocionado por poder
         contribuir a soluciones tecnologicas
       </p>
 
@@ -55,17 +59,10 @@ import Projects from "../components/Projects.astro";
           CV
         </SocialPill>
       </nav>
-      <!-- <div>
-        <img
-          class="w-[300px] h-[300px] rounded-full object-cover"
-          src="https://www.origastock.com/images/3d-characters/download/5.png"
-          alt="Pedro Mocco"
-        />
-      </div> -->
     </Container>
     <Container id="experience">
       <h2 class="text-3xl font-bold mb-6 flex gap-x-2 items-center">
-        <SuitcaseIco class="size-10" />Experiencia laboral
+        <SuitcaseIco class="size-10" />Experiencia
       </h2>
       <Experience />
     </Container>
@@ -74,6 +71,24 @@ import Projects from "../components/Projects.astro";
         <ReactIco class="size-10" />Proyectos
       </h2>
       <Projects />
+    </Container>
+    <Container id="about">
+      <h2 class="text-3xl font-bold mb-6 flex gap-x-2 items-center">
+        <TieIco class="size-10" /> Sobre mi
+      </h2>
+      <About />
+    </Container>
+    <Container id="skills">
+      <h2 class="text-3xl font-bold mb-6 flex gap-x-2 items-center">
+        <LaptopIco class="size-10" /> Habilidades
+      </h2>
+      <Skills />
+    </Container>
+    <Container id="contac">
+      <h2 class="text-3xl font-bold mb-6 flex gap-x-2 items-center">
+        <ContactIco class="size-10" /> Contacto
+      </h2>
+      <Contact />
     </Container>
   </main>
 </Layout>
